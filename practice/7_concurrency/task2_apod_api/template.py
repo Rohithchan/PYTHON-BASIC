@@ -3,7 +3,7 @@ import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta
 
-API_KEY = 'YOUR_API_KEY'  # Replace with your NASA API key
+API_KEY = 'https://api.nasa.gov/planetary/apod?api_key=YOUR_KEY&date=2020-07-06'  
 BASE_URL = 'https://api.nasa.gov/planetary/apod'
 
 def download_image(date):
